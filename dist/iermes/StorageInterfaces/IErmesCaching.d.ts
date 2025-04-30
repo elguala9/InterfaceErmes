@@ -1,23 +1,14 @@
-import { MessageType } from "../Types/ErmesType.js";
-
-
+import { MessageType } from "../../types/ErmesType.js";
 /**
  * repository that handle the caching of the messages, both arrived and sent
  */
-export interface IErmesCachingRepository<
-    DataJson extends MessageType,
-    IdType
-    > {
+export interface IErmesCachingRepository<DataJson extends MessageType, IdType> {
     store(data: DataJson): Promise<void>;
     retrieve(id: IdType): Promise<DataJson | undefined>;
     delete(id: IdType): Promise<void>;
 }
-
 /**
  * service that handle the caching of the messages, both arrived and sent
  */
-export interface IErmesCachingService<
-    DataJson extends MessageType,
-    IdType
-    > extends IErmesCachingRepository<DataJson, IdType>{
+export interface IErmesCachingService<DataJson extends MessageType, IdType> extends IErmesCachingRepository<DataJson, IdType> {
 }

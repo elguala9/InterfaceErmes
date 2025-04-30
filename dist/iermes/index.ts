@@ -6,5 +6,3 @@ export * from "./StandardInterfaces/IErmes";
 export * from "./StandardInterfaces/IIdHandler";
 export * from "./StorageInterfaces/IErmesCaching";
 export * from "./StorageInterfaces/IErmesStorage";
-export * from "./Types/ErmesStorageType";
-export * from "./Types/ErmesType";

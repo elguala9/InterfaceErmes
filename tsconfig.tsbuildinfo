@@ -1,1 +1,1 @@
-{"root":["./src/standardinterfaces/iermes.ts","./src/standardinterfaces/iidhandler.ts","./src/storageinterfaces/iermescaching.ts","./src/storageinterfaces/iermesstorage.ts","./src/types/ermesstoragetype.ts","./src/types/ermestype.ts"],"version":"5.8.2"}
+{"root":["./packages/iermes/standardinterfaces/iermes.ts","./packages/iermes/standardinterfaces/iidhandler.ts","./packages/iermes/storageinterfaces/iermescaching.ts","./packages/iermes/storageinterfaces/iermesstorage.ts","./packages/types/ermesstoragetype.ts","./packages/types/ermestype.ts"],"version":"5.8.2"}
