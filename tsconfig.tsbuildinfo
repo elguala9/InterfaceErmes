@@ -1,0 +1,1 @@
+{"root":["./src/standardinterfaces/iermes.ts","./src/standardinterfaces/iidhandler.ts","./src/storageinterfaces/iermescaching.ts","./src/storageinterfaces/iermesstorage.ts","./src/types/ermesstoragetype.ts","./src/types/ermestype.ts"],"version":"5.8.2"}
