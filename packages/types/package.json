@@ -1,7 +1,6 @@
 {
     "name": "@types/ermes",
     "version": "1.0.0",
-    "types": "index.d.ts",
-    "main": "",
-    "files": ["index.d.ts"]
+    "types": "dist/index.d.ts",
+    "files": ["dist"]
   }

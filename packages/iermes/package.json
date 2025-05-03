@@ -25,5 +25,8 @@
   "devDependencies": {
     "barrelsby": "^2.8.1"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": ["packages/*"],
+  "dependencies": {
+    "@types/ermes": "file:../types"
+  }
 }
