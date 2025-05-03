@@ -1,4 +1,4 @@
-import { MessageType } from "../../../types/src/ErmesType.js";
+import { MessageType } from "ermes";
 
 
 /**

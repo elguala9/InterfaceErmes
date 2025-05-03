@@ -2,9 +2,6 @@
   "name": "iermes",
   "version": "1.0.0",
   "description": "Interfaces for the package ermes",
-  "keywords": [
-    "ermes"
-  ],
   "homepage": "https://github.com/elguala9/InterfaceErmes#readme",
   "bugs": {
     "url": "https://github.com/elguala9/InterfaceErmes/issues"
@@ -16,8 +13,8 @@
   "license": "GPL-2.0-only",
   "author": "Luca Gualandi",
   "type": "module",
-  "main":  "dist/iermes/index.js",
-  "types": "dist/iermes/index.d.ts",
+  "main":  "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "postbuild":"barrelsby --directory dist/iermes --delete --barrelName index.js --extensions js & barrelsby --directory dist/types --delete --barrelName index.js --extensions js",
     "build": "tsc -b tsconfig.json"
@@ -27,6 +24,6 @@
   },
   "workspaces": ["packages/*"],
   "dependencies": {
-    "@types/ermes": "file:../types"
+    "ermes": "file:../types"
   }
 }

@@ -2,11 +2,12 @@
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
-    "postbuild:types":"barrelsby --directory packages/types/dist --delete --barrelName index.js --extensions js",
+    
     "postbuild:ermes":"barrelsby --directory packages/iermes/dist --delete --barrelName index.js --extensions js",
-    "build": "npm run build:types && npm run build:iermes", 
+    "build": "tsc -b . && npm run postbuild:types && npm run postbuild:ermes",
     "build:types": "tsc -b packages/types",
     "build:iermes": "tsc -b packages/iermes",
     "clean": "rimraf packages/*/dist"
   }
 }
+

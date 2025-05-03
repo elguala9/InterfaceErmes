@@ -1,4 +1,4 @@
-import { MessageChunkErmes, MessageDataErmes, ServiceMessage } from "../ErmesType.js";
+import { MessageChunkErmes, MessageDataErmes, ServiceMessage } from "./ErmesType";
 export type IdStorageForPouchDB = {
     _id: string;
 };

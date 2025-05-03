@@ -1,10 +1,17 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
+  "references": [{ "path": "../types" }],
   "compilerOptions": {
-    "composite": true,  
+    "composite": true,
+    "declaration": true,      // ereditato dal base, ma meglio dichiararlo esplicitamente
+    "rootDir": "src",
     "outDir": "dist",
-    "rootDir": "src"
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "iermes":   ["../types/dist/index.d.ts"],
+      "iermes/*": ["../types/dist/*"]
+    }
   },
-  "include": ["src"],
-  "exclude": ["dist"]
+  "include": ["src"]
 }
