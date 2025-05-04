@@ -2,8 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "references": [{ "path": "../types" }],
   "compilerOptions": {
-    "composite": true,
-    "declaration": true,      // ereditato dal base, ma meglio dichiararlo esplicitamente
+    "composite": true,     // ereditato dal base, ma meglio dichiararlo esplicitamente
     "rootDir": "src",
     "outDir": "dist",
     "strict": true,

@@ -1,4 +1,4 @@
-import { MessageType } from "ermes";
+import { MessageType } from "ermes-types";
 
 /**
  * repository that handle the storage of the messages, both arrived and sent
