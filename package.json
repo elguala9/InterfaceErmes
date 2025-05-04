@@ -1,13 +1,18 @@
 {
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    
-    "postbuild:ermes":"barrelsby --directory packages/iermes/dist --delete --barrelName index.js --extensions js",
-    "build": "tsc -b . && npm run postbuild:types && npm run postbuild:ermes",
+    "barrelsby:ermes": "barrelsby --directory packages/iermes/src --delete --barrelName index.ts --extensions ts",
+    "barrelsby:types": "barrelsby --directory packages/types/src --delete --barrelName index.ts --extensions ts",
+    "build": "npm run barrelsby:types && npm run barrelsby:ermes && npm run add-js && tsc -b .",
     "build:types": "tsc -b packages/types",
     "build:iermes": "tsc -b packages/iermes",
-    "clean": "rimraf packages/*/dist"
+    "clean": "rimraf packages/*/dist",
+    "add-js": "ts-node utility/add-js-import.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3"
   }
 }
-
